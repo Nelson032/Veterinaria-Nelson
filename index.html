@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vet-Nel · Veterinaria y cuidado de mascotas</title>
+  <meta name="description" content="Vet-Nel: atención veterinaria completa para tus mascotas. Consultas, vacunación, cirugía, peluquería, tienda y urgencias 24h." />
+
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Css -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- ===== Menu ===== -->
+  <header>
+    <div class="contenedor nav">
+      <a href="#inicio" class="logo">
+        <span class="logo__icono">🐾</span>
+        Vet-Nel
+      </a>
+
+      <button class="nav__mobile" id="menuBoton" aria-label="Abrir menú" aria-expanded="false">☰</button>
+
+      <nav aria-label="Navegación principal">
+        <ul class="nav__lista" id="menu">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#resenas">Reseñas</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#contacto" class="btn">Pedir turno</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="principal" id="inicio">
+      <div class="contenedor principal__grid">
+        <div>
+          <span class="principal__badge">🩺 15 años cuidando mascotas</span>
+          <h1>Tu mascota merece la <span>mejor atención</span> veterinaria</h1>
+          <p>
+            En Vet-Nel combinamos experiencia, cariño y tecnología para cuidar de tu
+            perro, gato o mascota exótica. Consultas, vacunas, cirugías, tienda y urgencias 24h.
+          </p>
+          <div class="principal__cta">
+            <a href="#contacto" class="btn">Reservar turno</a>
+            <a href="#productos" class="btn btn--claro">Ver productos</a>
+          </div>
+          <div class="principal__stats">
+            <div>
+              <div class="stat__num">+12.000</div>
+              <div class="stat__label">pacientes felices</div>
+            </div>
+            <div>
+              <div class="stat__num">24/7</div>
+              <div class="stat__label">urgencias</div>
+            </div>
+            <div>
+              <div class="stat__num">4.9★</div>
+              <div class="stat__label">valoración media</div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <img
+            class="principal__img"
+            src="https://images.unsplash.com/photo-1623387641168-d9803ddd3f35?auto=format&fit=crop&w=700&q=80"
+            alt="Perro recibiendo atención veterinaria"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="productos">
+      <div class="contenedor">
+        <h2 class="seccion__titulo">Nuestra tienda</h2>
+        <p class="seccion__subtitulo">
+          Productos seleccionados para el cuidado diario de tu mascota, disponibles en la clínica.
+        </p>
+
+        <div class="productos__flex">
+
+          <article class="producto">
+            <img class="producto__img" src="https://images.unsplash.com/photo-1589924691995-400dc9ecc119?auto=format&fit=crop&w=600&q=80" alt="Bolsa de alimento balanceado para perro" loading="lazy" />
+            <div class="producto__cuerpo">
+              <span class="producto__etiqueta">Alimento</span>
+              <h3>Balanceado Premium</h3>
+              <p>Alimento completo y balanceado para perros adultos, rico en proteínas y omega 3.</p>
+              <div class="producto__pie">
+                <span class="producto__precio">$8.900</span>
+                <a href="#contacto" class="btn">Consultar</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="producto">
+            <img class="producto__img" src="https://images.unsplash.com/photo-1576201836106-db1758fd1c97?auto=format&fit=crop&w=600&q=80" alt="Juguete con forma de hueso para perro" loading="lazy" />
+            <div class="producto__cuerpo">
+              <span class="producto__etiqueta">Juguetes</span>
+              <h3>Juguete Mordillo</h3>
+              <p>Hueso resistente de goma atóxica, ideal para mantener a tu perro entretenido y activo.</p>
+              <div class="producto__pie">
+                <span class="producto__precio">$3.200</span>
+                <a href="#contacto" class="btn">Consultar</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="producto">
+            <img class="producto__img" src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?auto=format&fit=crop&w=600&q=80" alt="Collar y correa para mascota" loading="lazy" />
+            <div class="producto__cuerpo">
+              <span class="producto__etiqueta">Accesorios</span>
+              <h3>Collar + Correa</h3>
+              <p>Set ajustable y acolchado, cómodo para el paseo diario y disponible en varios colores.</p>
+              <div class="producto__pie">
+                <span class="producto__precio">$4.750</span>
+                <a href="#contacto" class="btn">Consultar</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="producto">
+            <img class="producto__img" src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&w=600&q=80" alt="Snacks y premios para mascotas" loading="lazy" />
+            <div class="producto__cuerpo">
+              <span class="producto__etiqueta">Snacks</span>
+              <h3>Premios Digestivos</h3>
+              <p>Bocaditos naturales que ayudan a la digestión y son perfectos para entrenar.</p>
+              <div class="producto__pie">
+                <span class="producto__precio">$2.100</span>
+                <a href="#contacto" class="btn">Consultar</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="producto">
+            <img class="producto__img" src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?auto=format&fit=crop&w=600&q=80" alt="Productos de higiene para mascotas" loading="lazy" />
+            <div class="producto__cuerpo">
+              <span class="producto__etiqueta">Higiene</span>
+              <h3>Shampoo Hipoalergénico</h3>
+              <p>Fórmula suave con avena, ideal para pieles sensibles y pelajes delicados.</p>
+              <div class="producto__pie">
+                <span class="producto__precio">$3.650</span>
+                <a href="#contacto" class="btn">Consultar</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="producto">
+            <img class="producto__img" src="https://images.unsplash.com/photo-1541599540903-216a46ca1dc0?auto=format&fit=crop&w=600&q=80" alt="Cama cómoda para mascota" loading="lazy" />
+            <div class="producto__cuerpo">
+              <span class="producto__etiqueta">Descanso</span>
+              <h3>Cama Acolchada</h3>
+              <p>Descanso cómodo y abrigado con funda lavable, en tres tamaños distintos.</p>
+              <div class="producto__pie">
+                <span class="producto__precio">$7.400</span>
+                <a href="#contacto" class="btn">Consultar</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="servicios">
+      <div class="contenedor">
+        <h2 class="seccion__titulo">Nuestros servicios</h2>
+        <p class="seccion__subtitulo">
+          Todo lo que tu mascota necesita en un mismo lugar, con profesionales que la tratan como propia.
+        </p>
+        <div class="servicios__grid">
+
+          <div class="servicio">
+            <div class="servicio__icono">🩺</div>
+            <h3>Consulta general</h3>
+            <p>Chequeos completos, diagnóstico y seguimiento personalizado de la salud de tu mascota.</p>
+          </div>
+
+          <div class="servicio">
+            <div class="servicio__icono">💉</div>
+            <h3>Vacunación</h3>
+            <p>Planes de vacunación al día, con calendario y recordatorios para que no se te escape ninguna.</p>
+          </div>
+
+          <div class="servicio">
+            <div class="servicio__icono">🏥</div>
+            <h3>Cirugía</h3>
+            <p>Quirófano equipado para cirugías de esterilización, tejidos blandos y traumatología.</p>
+          </div>
+
+          <div class="servicio">
+            <div class="servicio__icono">🦷</div>
+            <h3>Odontología</h3>
+            <p>Limpiezas dentales y tratamiento de enfermedades bucales para una sonrisa saludable.</p>
+          </div>
+
+          <div class="servicio">
+            <div class="servicio__icono">✂️</div>
+            <h3>Peluquería</h3>
+            <p>Baño, corte y cuidado estético con productos hipoalergénicos y muy buena paciencia.</p>
+          </div>
+
+          <div class="servicio">
+            <div class="servicio__icono">🚑</div>
+            <h3>Urgencias 24h</h3>
+            <p>Atención inmediata cualquier día y hora. Tu tranquilidad no cierra nunca.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="resenas">
+      <div class="contenedor">
+        <h2 class="seccion__titulo">Lo que dicen nuestros clientes</h2>
+        <p class="seccion__subtitulo">
+          Más de 12.000 familias confían el cuidado de sus mascotas a Vet-Nel.
+        </p>
+
+        <div class="resenas__grid">
+
+          <article class="resena">
+            <div class="resena__estrellas">★★★★★</div>
+            <p class="resena__texto">Llevé a mi gata de urgencia a las 3 de la mañana y nos atendieron enseguida. Profesionalismo y calidez total.</p>
+            <div class="resena__autor">
+              <img class="resena__avatar" src="https://i.pravatar.cc/100?img=32" alt="Foto de María López" loading="lazy" />
+              <div>
+                <strong>María López</strong>
+                <span>Dueña de "Michi"</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="resena">
+            <div class="resena__estrellas">★★★★★</div>
+            <p class="resena__texto">El plan de vacunación y los recordatorios son un golazo. Nunca más se me pasó una dosis. Muy recomendable.</p>
+            <div class="resena__autor">
+              <img class="resena__avatar" src="https://i.pravatar.cc/100?img=12" alt="Foto de Juan Pérez" loading="lazy" />
+              <div>
+                <strong>Juan Pérez</strong>
+                <span>Dueño de "Rocky"</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="resena">
+            <div class="resena__estrellas">★★★★☆</div>
+            <p class="resena__texto">La peluquería dejó a mi perro impecable y sin estrés. Se nota que tratan bien a los animales.</p>
+            <div class="resena__autor">
+              <img class="resena__avatar" src="https://i.pravatar.cc/100?img=45" alt="Foto de Carla Gómez" loading="lazy" />
+              <div>
+                <strong>Carla Gómez</strong>
+                <span>Dueña de "Luna"</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="nosotros">
+      <div class="contenedor porque__grid">
+        <div>
+          <h2 class="seccion__titulo" style="text-align:left;">¿Por qué elegir Vet-Nel?</h2>
+          <p class="seccion__subtitulo" style="text-align:left; margin-bottom:26px;">
+            Porque sabemos que tu mascota es parte de la familia.
+          </p>
+
+          <div class="porque__item">
+            <div class="porque__check">✓</div>
+            <div>
+              <h3>Equipo especializado</h3>
+              <p>Veterinarios con posgrado y auxiliares con años de experiencia en manejo de mascotas.</p>
+            </div>
+          </div>
+
+          <div class="porque__item">
+            <div class="porque__check">✓</div>
+            <div>
+              <h3>Equipamiento moderno</h3>
+              <p>Radiografía digital, ecografía y laboratorio propio para diagnósticos rápidos y precisos.</p>
+            </div>
+          </div>
+
+          <div class="porque__item">
+            <div class="porque__check">✓</div>
+            <div>
+              <h3>Atención sin estrés</h3>
+              <p>Protocolos de manejo suave que reducen el miedo y hacen la visita una buena experiencia.</p>
+            </div>
+          </div>
+
+          <div class="porque__item">
+            <div class="porque__check">✓</div>
+            <div>
+              <h3>Precios claros</h3>
+              <p>Presupuestos transparentes y planes de salud para que cuidar no sea un dolor de cabeza.</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <img
+            class="porque__img"
+            src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=700&q=80"
+            alt="Veterinaria revisando a un perro"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto">
+      <div class="contenedor contacto__grid">
+        <div class="contacto__info">
+          <h2 class="seccion__titulo" style="text-align:left;">Contactanos</h2>
+          <p class="seccion__subtitulo" style="text-align:left; margin-bottom:28px;">
+            Pedí tu turno por el formulario o vení a conocernos. ¡Te esperamos!
+          </p>
+
+          <div class="contacto__fila">
+            <div class="contacto__icono">📍</div>
+            <div>
+              <strong>Dirección</strong>
+              <span>Av. Siempreviva 1234, Buenos Aires</span>
+            </div>
+          </div>
+
+          <div class="contacto__fila">
+            <div class="contacto__icono">📞</div>
+            <div>
+              <strong>Teléfono / WhatsApp</strong>
+              <span>+54 11 5555 1234</span>
+            </div>
+          </div>
+
+          <div class="contacto__fila">
+            <div class="contacto__icono">📧</div>
+            <div>
+              <strong>Email</strong>
+              <span>hola@Vet-Nel.com.ar</span>
+            </div>
+          </div>
+
+          <div class="contacto__fila">
+            <div class="contacto__icono">🕘</div>
+            <div>
+              <strong>Horarios</strong>
+              <span>Lun a Vie 9–20 h · Sáb 9–14 h · Urgencias 24/7</span>
+            </div>
+          </div>
+
+          <div class="contacto__mapa">
+            <iframe
+              src="https://www.google.com/maps?q=Buenos+Aires&output=embed"
+              title="Ubicación de Vet-Nel en el mapa"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+
+        <form id="formContacto" action="https://formspree.io/f/mppqyogn" method="POST">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" required />
+
+          <label for="mascota">Tipo de mascota</label>
+          <select id="mascota" name="mascota">
+            <option value="perro">Perro</option>
+            <option value="gato">Gato</option>
+            <option value="exotica">Mascota exótica</option>
+            <option value="otro">Otro</option>
+          </select>
+
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" placeholder="Contanos un poco sobre tu consulta…" required></textarea>
+
+          <input type="hidden" name="_subject" value="Nueva consulta desde Vet-Nel" />
+
+          <button type="submit" class="btn">Enviar mensaje</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="contenedor">
+      <div class="footer__grid">
+        <div>
+          <h4>🐾 Vet-Nel</h4>
+          <p>Tu mascota, nuestra familia.</p>
+        </div>
+        <div>
+          <h4>Navegación</h4>
+          <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#resenas">Reseñas</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contacto</h4>
+          <ul>
+            <li>+54 11 5555 1234</li>
+            <li>hola@Vet-Nel.com.ar</li>
+            <li>Av. Siempreviva 1234</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__copyright">
+        © 2026 Vet-Nel · Veterinaria y cuidado de mascotas
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // ===== Hamburguesa =====
+    const boton = document.getElementById('menuBoton');
+    const menu = document.getElementById('menu');
+
+    boton.addEventListener('click', () => {
+      const abierto = menu.classList.toggle('abierto');
+      boton.textContent = abierto ? '✕' : '☰';
+      boton.setAttribute('aria-expanded', String(abierto));
+    });
+
+    menu.querySelectorAll('a').forEach((enlace) => {
+      enlace.addEventListener('click', () => {
+        menu.classList.remove('abierto');
+        boton.textContent = '☰';
+        boton.setAttribute('aria-expanded', 'false');
+      });
+    });
+  </script>
+</body>
+</html>
